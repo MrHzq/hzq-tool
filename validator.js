@@ -2,10 +2,10 @@
  * @Author: hzq
  * @Date: 2018-11-07 14:12:26
  * @Last Modified by: hzq
- * @Last Modified time: 2018-12-12 17:02:04
+ * @Last Modified time: 2018-12-12 17:10:33
  * @文件说明: 这是一个用于存放正则表达式和一些验证方法的插件，除了存放了目前常用的正则之外，还根据这些正则封装了对应的验证方法
  */
-export default {
+module.exports = {
     // 金额格式化
     formatMoney(str = 0) {
         str = str + ''

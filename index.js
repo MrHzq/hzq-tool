@@ -2,11 +2,11 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:18:05
  * @Last Modified by: hzq
- * @Last Modified time: 2018-12-12 17:04:17
+ * @Last Modified time: 2018-12-12 17:10:23
  * @文件说明: 全局$tool插件
  */
-import validator from './validator'
-export default {
+var validator = require('./validator.js')
+module.exports = {
     install(Vue) {
         let tool = {
             ...validator
