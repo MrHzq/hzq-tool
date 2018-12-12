@@ -1,0 +1,24 @@
+{
+    "name": "hzq-tool",
+    "version": "1.0.0",
+    "description": "js tool function",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MrHzq/hzq-tool.git"
+    },
+    "keywords": [
+        "tool"
+    ],
+    "readme": "使用手册https://github.com/MrHzq/hzq-tool",
+    "readmeFilename": "README.md",
+    "author": "hzq",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MrHzq/hzq-tool/issues"
+    },
+    "homepage": "https://github.com/MrHzq/hzq-tool#readme"
+}
