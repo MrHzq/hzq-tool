@@ -1,6 +1,6 @@
 {
     "name": "hzq-tool",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "js tool function",
     "main": "index.js",
     "scripts": {
