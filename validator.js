@@ -2,10 +2,10 @@
  * @Author: hzq
  * @Date: 2018-11-07 14:12:26
  * @Last Modified by: hzq
- * @Last Modified time: 2018-12-12 17:10:33
+ * @Last Modified time: 2018-12-24 15:05:44
  * @文件说明: 这是一个用于存放正则表达式和一些验证方法的插件，除了存放了目前常用的正则之外，还根据这些正则封装了对应的验证方法
  */
-module.exports = {
+export default {
     // 金额格式化
     formatMoney(str = 0) {
         str = str + ''
@@ -136,9 +136,9 @@ module.exports = {
         let reg = /^[a-z\d]+(\.[a-z\d]+)*@([\da-z](-[\da-z])?)+(\.{1,2}[a-z]+)+$/
         return reg.test(email)
     },
-    // 验证码格式验证
-    checkVerifyCode(code) {
-        let reg = /^\d{6}$/
+    // 纯数字长度验证
+    checkVerifyCode(code, len = 4) {
+        let reg = new RegExp(`^\\d{${len}}$`)
         return reg.test(code)
     },
     // 邀请码格式验证

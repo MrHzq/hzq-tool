@@ -2,11 +2,11 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:18:05
  * @Last Modified by: hzq
- * @Last Modified time: 2018-12-13 10:02:20
+ * @Last Modified time: 2018-12-14 17:29:25
  * @文件说明: 全局$tool插件
  */
-var validator = require('./validator.min.js')
-module.exports = {
+import validator from './validator.min.js'
+export default {
     install(Vue, prefix = 'xkt_') {
         let tool = Object.assign({}, validator)
         Vue.prototype.$tool = tool
