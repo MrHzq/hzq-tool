@@ -2,7 +2,7 @@
     "name": "hzq-tool",
     "version": "1.0.9",
     "description": "js tool function",
-    "main": "index.js",
+    "main": "index.es5.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
