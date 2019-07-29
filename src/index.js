@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:18:05
  * @Last Modified by: hzq
- * @Last Modified time: 2019-07-29 14:05:10
+ * @Last Modified time: 2019-07-29 14:15:25
  * @文件说明: 全局$tool插件
  */
 import VueMethods from './vue-methods.js'
@@ -12,7 +12,7 @@ import ToolMethods from './tool-methods.js'
 export default {
     install(Vue, config = {}) {
         const defaultConfig = {
-            storage: 'session',
+            storage: window.sessionStorage,
             prefix: 'tool_',
             router: ''
         }
@@ -23,9 +23,7 @@ export default {
         )
         Vue.use(VueMethods, router)
 
-        let currStorage = window.sessionStorage
-        if (storage === 'local') currStorage = window.localStorage
-        if (storage) Vue.use(VueStorage, currStorage, prefix)
+        Vue.use(VueStorage, storage, prefix)
 
         const tool = Object.assign({}, ToolMethods)
         Vue.$tool = tool
